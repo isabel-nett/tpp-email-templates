@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Welcome</title>
+</head>
+<body>
+    <!-- Default colors are set; colors should feed from partner Appearance Settings -->
+    <div class="container" style="width: 95%;">
+        <img class="logo col-1 mb-1" id="logo">
+        <h1 class="greeting col-12" style="color:#465382">Welcome, <span id="bizName">Business Name</span>.</h1>
+        <hr style="color:#465382">
+        <!-- id="welcomeMsg" is the default message and can be changed in partner settings -->
+        <p class="paragraph-one col-12 mt-3 mb-3" id="welcomeMsg">Thank you for submitting an application for accepting electronic payments. You have been approved and now have a live merchant account under <span id="partnerName">Partner Name</span> that can be used independently as a virtual terminal, for your ecommerce website, or with any features available through <span id="partnerName">Partner Name</span>.</p>
+        <!-- id="pciCompliance" may be turned on or off in partner settings -->
+        <div id="pciCompliance">
+            <p>By continuing, you are agreeing to PCI Compliance. View the document below:</p>
+            <button class="btn compliance-btn col-4 col-md-3 mb-5" id="complianceDoc" target="_blank" style="background-color:#465382; color:white" href="">View Document</button>
+        </div>
+        <div class="id col-12 mb-3">Your Account ID# is: <span id="ID#"></span></div>
+        <!-- id="portal" may be turned on or off in partner settings -->
+        <button class="btn portal-btn col-4 col-md-3 mb-5" id="portal" target="_blank" style="background-color:#465382; color:white">Log In</button>
+        <!-- id="terminal" may be turned on or off in partner settings -->
+        <div id="terminal">
+            <p class="paragraph-two col-12">If you are using a point-of-sale system, you may need to contact your software provider in order to activate/enable payments within the application. Alternatively, to order point-of-sale terminals, <a href="" target="_blank">click here</a>.</p>
+        </div>
+        <!-- id="apiDev" may be turned on or off in partner settings -->
+        <div id="apiDev">
+            <p class="details col-12">Below are the additional details that you will need for any custom development.</p>
+            <div class="apikey col-12">API key: <span id="apikey"></span></div>
+            <div class="apikey col-12">iFrame key: <span id="iframekey"></span></div>
+            <p class="get-started mt-5">Here is how to get started:</p>
+            <div class="row mb-5" id="devDetails">
+                <div class="pmt-page col-12 col-md-4 mt-2 mb-4">
+                    <button class="btn pmt-page-btn mb-2" target="_blank" style="background-color:#465382; color:white">Payment Link Generator</button>
+                    <p class="pmt-page-txt">This easy payment functionality utilizes your unique API key. It allows you to create payment and subscription pages to send or provide on the spot as invoices or bills. Choose from a variety of payment methods.</p>
+                </div>
+                <div class="iframe col-12 col-md-4 mt-2 mb-4">
+                    <button class="btn iframe-btn mb-2" target="_blank" style="background-color:#465382; color:white">Development Certification</button>
+                    <p class="iframe-txt">For smooth integration, Triple Play Pay has built a quick certification process that utilizes a Sandbox environment. Completion is required to enable any organization's production environment to officially begin accepting transactions via custom development.</p>
+                </div>
+                <div class="api-docs col-12 col-md-4 mt-2 mb-4">
+                    <button class="btn api-docs-btn mb-2" target="_blank" href="https://tripleplaypay.com/api" style="background-color:#465382; color:white">API Documents</button>
+                    <p class="api-docs-txt">These pages include everything that you will need to integrate the API or iFrame into your code in any of the common development languages. Design your responsive payment interface however is best fit for your business.</p>
+                </div>
+            </div>
+        </div>
+        <p class="thank-you">Thank you for choosing <span id="partnerName">Partner Name</span>!</p>
+        <!-- id="customContact" may be turned on and customized in partner settings -->
+        <div id="customContact"></div>
+    </div>
+</body>
+</html>
