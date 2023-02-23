@@ -9,31 +9,31 @@
 </head>
 <body>
     <div class="container" style="width: 95%;">
-        <img class="logo col-1 mb-1">
-        <h1 class="greeting col-12">Welcome, Growth Associates.</h1>
-        <hr>
+        <img class="logo col-1 mb-1" id="logo">
+        <h1 class="greeting col-12" style="color:#465382">Welcome, <span id="bizName">Business Name</span>.</h1>
+        <hr style="color:#465382">
         <p class="paragraph-one col-12 mt-3 mb-3">Thank you for submitting an application for accepting electronic payments. You have been approved and now have a live merchant account under Triple Play Pay that can be used independently as a virtual terminal, for your ecommerce website, or with any software application that has integrated to Triple Play Pay.</p>
         <p class="paragraph-two col-12 mb-3">If you are using a point-of-sale system, you may need to contact your software provider in order to activate/enable payments within the application.</p>
         <p class="details col-12">Save these details for future reference:</p>
         <div class="id col-12" id="id">Your ID# is:</div>
         <div class="apikey col-12" id="apikey">Your API key is:</div>
-        <button class="btn portal-btn col-4 col-md-3 mt-3" id="portal">Go To Your Portal ></button>
+        <button class="btn portal-btn col-4 col-md-3 mt-3" id="portal" target="_blank" style="background-color:#465382; color:white">Go To Your Portal ></button>
         <p class="get-started mt-5">Here is how you can get started:</p>
-        <div class="row mb-5">
+        <div class="row mb-5" id="devDetails">
             <div class="pmt-page col-12 col-md-4 mt-2 mb-4">
-                <button class="btn pmt-page-btn">Payment Page</button>
-                <p class="pmt-page-txt">This is your payment page, utilizing your unique API key. It allows you to create payment and subscription links to be sent as invoices, etc.</p>
+                <button class="btn pmt-page-btn" target="_blank" style="background-color:#465382; color:white">Payment Link Generator</button>
+                <p class="pmt-page-txt">This easy payment functionality utilizes your unique API key. It allows you to create payment and subscription pages to send or provide on the spot as invoices or bills. Choose from a variety of payment methods.</p>
             </div>
             <div class="api-docs col-12 col-md-4 mt-2 mb-4">
-                <button class="btn api-docs-btn">API Documents</button>
+                <button class="btn api-docs-btn" target="_blank" href="https://tripleplaypay.com/api" style="background-color:#465382; color:white">API Documents</button>
                 <p class="api-docs-txt">These pages include everything that you will need to integrate the API into your code in any of the common development languages. Design your own payment interface however is best fit for your business.</p>
             </div>
             <div class="iframe col-12 col-md-4 mt-2 mb-4">
-                <button class="btn iframe-btn">iFrame Integration</button>
-                <p class="iframe-txt">The iFrame is the plug-and-go solution with easy visual customizations that allows you to input our pre-built payment interface into your site or app.</p>
+                <button class="btn iframe-btn" target="_blank" href="https://tripleplaypay.com/api" style="background-color:#465382; color:white">iFrame Integration</button>
+                <p class="iframe-txt">The iFrame is the plug-and-go solution with easy visual and functional customizations that allows you to input our pre-built payment interface into your site or app.</p>
             </div>
         </div>
-        <div class="thank-you">Thank you for choosing Triple Play Pay!</div>
+        <div class="thank-you">Thank you for choosing <span id="partnerName">Triple Play Pay!</span></div>
     </div>
 </body>
 </html>
